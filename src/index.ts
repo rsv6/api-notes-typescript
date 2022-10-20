@@ -1,5 +1,3 @@
-import { App } from "./App"
+import { App } from "./server/App"
 
-new App().server.listen(8080, () => {
-  console.log("listening on port 8080")
-});
+new App();
