@@ -1,4 +1,5 @@
 import { Request, Response } from "express";
+import { UsuarioModel } from "../models/UsuarioModel";
 
 class UsuarioController{
 
@@ -7,7 +8,13 @@ class UsuarioController{
     console.log("Route /");
 
     return res.json({
-      response: 'Hello World'
+      response: 'Ola seja bem vindo',
+      usuario: new UsuarioModel(
+        "Rafael",
+        "rsv6",
+        "12345"
+      )
+    
     });
   }
 }

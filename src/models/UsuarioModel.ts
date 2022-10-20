@@ -1,10 +1,10 @@
 
 
-class UsuarioModel {
+export class UsuarioModel {
   private nome: string;
   private login: string;
   private senha: string;
-  private nivel: Array<string> = ['user', 'admin']
+  private nivel: Array<string> = ['user', 'admin'];
   private authe: string;
 
   constructor(nome: string, login: string, senha: string) {
